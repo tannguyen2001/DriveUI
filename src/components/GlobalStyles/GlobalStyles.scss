@@ -1,0 +1,28 @@
+@import 'normalize.css';
+
+:root{
+    --primary:red;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-size: 1.6rem;
+    line-height:  1.5;
+    text-rendering: optimizeSpeed;
+    margin: 0 12px;
+}   
+
+a{
+    text-decoration: none;
+    color: #000;
+}
