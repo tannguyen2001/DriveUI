@@ -10,7 +10,6 @@ function Button({ to, leftIcon, rightIcon, href, className, children, onClick, .
   const classes = cx('wrapper', { [className]: className })
 
   const props = {
-    onclick,
     ...passProps,
   }
 

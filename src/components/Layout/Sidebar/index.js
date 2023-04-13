@@ -9,9 +9,7 @@ const cx = classNames.bind(styles)
 function Sidebar() {
   return (
     <aside className={cx('wrapper')}>
-      <Button to='/login' leftIcon={<FontAwesomeIcon icon={faPlus} />}>
-        Mới
-      </Button>
+      <Button leftIcon={<FontAwesomeIcon icon={faPlus} />}>Mới</Button>
     </aside>
   )
 }
