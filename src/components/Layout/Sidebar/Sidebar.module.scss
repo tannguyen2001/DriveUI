@@ -1,4 +1,21 @@
 
 .wrapper{
-    width: 356px;
+    width: 300px;
+}
+
+.btn-new{
+    width: 220px;
+}
+
+.sidebar-list{
+    margin: 12px;
+    list-style: none;
+    .sidebar-item{
+        font-size:20px;
+        margin: 8px;
+        &:hover{
+            color: red;
+            cursor: pointer;
+        }
+    }
 }
