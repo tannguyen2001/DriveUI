@@ -1,4 +1,18 @@
-.wrapper{
-    height: 200px;
-    width: 320px;
+.wrapper-demo{
+    height: 80px;
+    width: 200px;
+    box-shadow: 1px 1px 10px 1px #ccc;
+    &:hover{
+        cursor: pointer;
+    }
+    .rpv-core__inner-pages{
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+}
+
+.title{
+    font-size: 40;
+    text-align: center;
 }

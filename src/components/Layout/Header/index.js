@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 const cx = classNames.bind(styles)
 
-function Header() {
+function Header({ onKeyUp }) {
   const [searchInput, setSearchInput] = useState('')
   return (
     <header className={cx('wrapper')}>
@@ -21,6 +21,7 @@ function Header() {
             placeholder='Tìm kiếm'
             onChange={(e) => setSearchInput(e.target.value)}
             value={searchInput}
+            onKeyUp={(e) => onKeyUp(e, searchInput)}
           />
           <div onClick={() => setSearchInput('')}>
             <FontAwesomeIcon icon={faCircleXmark} className={cx('icon-clear')} />

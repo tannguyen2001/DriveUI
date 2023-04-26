@@ -6,4 +6,37 @@
 
 .folder-container{
     height: 800px;
+    margin-top: 44px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-file{
+    list-style: none;
+}
+
+.file-item{
+    display: flex;
+    justify-content: space-between;
+    &:first-child>span{
+        font-size: 24px;
+        font-weight: 900;
+        color: brown;
+        margin-right: 24px;
+    }
+
+    &>span{
+        font-size: 20px;
+        margin: 0 16px;
+        display: block;
+        width: 300px;
+    }
+    &:hover{
+        background-color: #ccc;
+        cursor: pointer;
+    }
+
 }
