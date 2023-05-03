@@ -28,6 +28,11 @@
         margin-right: 24px;
     }
 
+    &>span:last-child{
+        display: block;
+        width: 16px;
+    }
+
     &>span{
         font-size: 20px;
         margin: 0 16px;
@@ -39,4 +44,12 @@
         cursor: pointer;
     }
 
+}
+
+
+.delete{
+    color: darkgreen;
+    &:hover{
+        color: red;
+    }
 }

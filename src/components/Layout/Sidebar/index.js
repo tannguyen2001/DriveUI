@@ -10,7 +10,7 @@ import axios from 'axios'
 
 const cx = classNames.bind(styles)
 
-function Sidebar() {
+function Sidebar({ getData }) {
   const [isShowFormUploads, setIsShowFormUpLoads] = useState(false)
 
   const handlerClickNew = () => {
@@ -44,16 +44,20 @@ function Sidebar() {
   const handleClickNewFile = () => {
     inputFile.current.click()
   }
+  const handleChangeFile = (event) => {
+    const files = event.target.files
+    const fileName = files[0].name
+    const filePath = 'C:\\Users\\Tan Nguyen\\OneDrive\\Máy tính\\Test File\\' + fileName
 
-  const handleChangeFile = () => {
     axios
       .post('https://localhost:7268/api/File', {
-        FileName: 'test6.pfd',
-        FilePath: 'C:gg',
+        FileName: fileName,
+        FilePath: filePath,
         UserID: 1,
       })
       .then((res) => {
         console.log(res)
+        getData()
       })
       .catch((error) => {
         console.log(error)
