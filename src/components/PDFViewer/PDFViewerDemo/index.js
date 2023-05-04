@@ -8,10 +8,10 @@ import classNames from 'classnames/bind'
 
 const cx = classNames.bind(styles)
 
-function PDFViewerDemo({ fileUrl }) {
+function PDFViewerDemo({ fileUrl, children }) {
   return (
     <div className={cx('wrapper-demo')}>
-      {<p className={cx('title')}>Thông tin cá nhân</p>}
+      {<p className={cx('title')}>{children}</p>}
       <Worker workerUrl='https://unpkg.com/pdfjs-dist@3.5.141/build/pdf.worker.min.js'>
         <Viewer fileUrl={fileUrl} />
       </Worker>

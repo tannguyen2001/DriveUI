@@ -42,9 +42,13 @@ function Home({ data, deleteFile }) {
       <div className={cx('history-container')}>
         <p className={cx('title')}>MỞ GẦN ĐÂY</p>
         <div className={cx('content')}>
-          <PDFPreviewDemo fileUrl={require('../../assets/filePDFs/test.pdf')} />
-          <PDFPreviewDemo fileUrl={require('../../assets/filePDFs/test.pdf')} />
-          <PDFPreviewDemo fileUrl={require('../../assets/filePDFs/test.pdf')} />
+          <PDFPreviewDemo fileUrl={require('../../assets/filePDFs/file1.pdf')}>
+            Mẫu Bảng đánh giá kết quả phỏng vấn
+          </PDFPreviewDemo>
+          <PDFPreviewDemo fileUrl={require('../../assets/filePDFs/file2.pdf')}>Mẫu đơn xin nghỉ phép</PDFPreviewDemo>
+          <PDFPreviewDemo fileUrl={require('../../assets/filePDFs/file3.pdf')}>
+            Mẫu phiếu đề xuất nhân sự
+          </PDFPreviewDemo>
         </div>
       </div>
       <div className={cx('folder-container')}>
